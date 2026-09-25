@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Parity Canvas — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1a1d29;
+    --muted: #5b6072;
+    --accent: #4f5fe0;
+    --border: #e6e8f0;
+    --card-bg: #f7f8fc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14151f;
+      --text: #eef0f6;
+      --muted: #a1a5b8;
+      --accent: #8b96ff;
+      --border: #2a2c3a;
+      --card-bg: #1c1e2b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14151f;
+    --text: #eef0f6;
+    --muted: #a1a5b8;
+    --accent: #8b96ff;
+    --border: #2a2c3a;
+    --card-bg: #1c1e2b;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 24px;
+  }
+  .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--accent);
+  }
+  h1 {
+    font-size: 32px;
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+  }
+  .subtitle {
+    color: var(--muted);
+    margin: 0 0 40px;
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 19px;
+    margin: 40px 0 12px;
+    letter-spacing: -0.01em;
+  }
+  p, li {
+    color: var(--text);
+    font-size: 15.5px;
+  }
+  p.muted, .updated {
+    color: var(--muted);
+    font-size: 14px;
+  }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin: 16px 0;
+  }
+  a { color: var(--accent); }
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 48px 0 24px;
+  }
+  .contact {
+    font-size: 15px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 14.5px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  th {
+    color: var(--muted);
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="badge"><span class="dot"></span> Chrome Extension Privacy Policy</div>
+
+  <h1>Parity Canvas</h1>
+  <p class="subtitle">Privacy Policy for the Parity Canvas browser extension</p>
+  <p class="updated">Last updated: September 25, 2026</p>
+
+  <div class="card">
+    <p style="margin:0;">
+      Parity Canvas is designed to do its work locally in your browser. It does not sell user data,
+      does not use data for advertising, and does not transmit the pages you compare to any
+      Parity Canvas server, because no such server exists.
+    </p>
+  </div>
+
+  <h2>What Parity Canvas does</h2>
+  <p>
+    Parity Canvas lets you load multiple webpages side by side in embedded viewports and mirrors
+    your interactions — clicks, keyboard input, scrolling, and form actions — across those
+    viewports, so you can compare how a page behaves across different screen sizes.
+  </p>
+
+  <h2>Information we access</h2>
+  <p>To provide this functionality, Parity Canvas may access the following, only within your browser:</p>
+  <ul>
+    <li><strong>URLs you enter</strong> — the web addresses you type into the comparison panels, used only to load those pages into the extension's workspace.</li>
+    <li><strong>Page content and DOM events</strong> — on pages you've added to a comparison set, the extension reads interaction events (clicks, scroll position, form input, keyboard events) in order to mirror them across the other panel(s).</li>
+    <li><strong>Extension settings</strong> — your preferences such as mirror/scroll-sync toggles, viewport presets, and page scale, stored locally so they persist between sessions.</li>
+  </ul>
+
+  <h2>How this information is used</h2>
+  <table>
+    <tr><th>Data</th><th>Purpose</th><th>Leaves your device?</th></tr>
+    <tr><td>URLs entered</td><td>Load pages into comparison panels</td><td>No</td></tr>
+    <tr><td>Interaction events (clicks, scroll, input)</td><td>Mirror actions across panels in real time</td><td>No</td></tr>
+    <tr><td>Extension settings</td><td>Remember your workspace preferences</td><td>No</td></tr>
+  </table>
+  <p>
+    All of the above is processed and stored locally within your browser (for example, using
+    browser storage APIs). None of it is transmitted to Parity Canvas developers or any
+    third party, and none of it is used for advertising or sold to anyone.
+  </p>
+
+  <h2>Host permissions and scripting</h2>
+  <p>
+    Parity Canvas requests broad host permissions and uses content scripts because its core
+    purpose — loading arbitrary pages side by side and mirroring interactions between them —
+    requires interacting with whatever page you choose to load. These permissions are used
+    exclusively to deliver that comparison and mirroring functionality, and are not used to
+    monitor your general browsing activity outside the extension's workspace.
+  </p>
+
+  <h2>Data sharing</h2>
+  <p>
+    Parity Canvas does not share, sell, transfer, or rent any user data to third parties.
+    There are no analytics, tracking, or advertising services embedded in the extension.
+  </p>
+
+  <h2>Data retention and deletion</h2>
+  <p>
+    Since all data is stored locally in your browser, it persists only as long as the extension
+    remains installed and your browser storage is intact. You can clear it at any time by
+    removing the extension or clearing its site data through your browser's extension settings.
+  </p>
+
+  <h2>Children's privacy</h2>
+  <p>
+    Parity Canvas is a developer/QA productivity tool and is not directed at children. We do not
+    knowingly collect information from children.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    If Parity Canvas's data practices change, this page will be updated and the "Last updated"
+    date above will reflect the change. Continued use of the extension after an update
+    constitutes acceptance of the revised policy.
+  </p>
+
+  <hr>
+
+  <h2>Contact</h2>
+  <p class="contact">
+    Questions about this privacy policy or Parity Canvas's data practices can be sent to:<br>
+    <strong>[your contact email here]</strong>
+  </p>
+
+</div>
+</body>
+</html>
